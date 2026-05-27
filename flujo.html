@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Flujo de trabajo con Git">
+    <title>Flujo de Trabajo - Taller Git 26.1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>🔄 Flujo de Trabajo</h1>
+    </header>
+
+    <nav class="site-nav">
+        <ul class="menu">
+            <li><a href="tagui.html">Inicio</a></li>
+            <li><a href="introduccion.html">Introducción</a></li>
+            <li><a href="comandos.html">Comandos</a></li>
+            <li><a href="flujo.html" class="active">Flujo</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Flujo de Trabajo Típico con Git</h2>
+            <p>Este es el proceso estándar que seguirás en la mayoría de tus proyectos:</p>
+
+            <ol class="workflow-steps">
+                <li>
+                    <h3>1️⃣ Crear o clonar repositorio</h3>
+                    <p>Si es nuevo: <code>git init</code></p>
+                    <p>Si existe: <code>git clone URL</code></p>
+                </li>
+                <li>
+                    <h3>2️⃣ Realizar cambios en los archivos</h3>
+                    <p>Edita el código como necesites en tu editor favorito.</p>
+                </li>
+                <li>
+                    <h3>3️⃣ Verificar el estado</h3>
+                    <p><code>git status</code> - Revisa qué archivos han cambiado.</p>
+                </li>
+                <li>
+                    <h3>4️⃣ Preparar los cambios</h3>
+                    <p><code>git add .</code> - Agrega todos los archivos al staging.</p>
+                    <p>O <code>git add archivo.txt</code> - Agrega archivos específicos.</p>
+                </li>
+                <li>
+                    <h3>5️⃣ Crear commit</h3>
+                    <p><code>git commit -m "Mensaje descriptivo de los cambios"</code></p>
+                </li>
+                <li>
+                    <h3>6️⃣ Enviar al remoto</h3>
+                    <p><code>git push origin main</code> - Sube tus commits a GitHub.</p>
+                </li>
+            </ol>
+
+            <h3>Consejos para buenos commits</h3>
+            <ul>
+                <li>Usa mensajes claros y descriptivos</li>
+                <li>Un commit por funcionalidad o corrección</li>
+                <li>Evita mensajes como "cambios" o "fix"</li>
+                <li>Usa el presente: "añade función" en lugar de "añadí función"</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Volver</h3>
+            <a href="tagui.html" class="button">← Volver al Inicio</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 - Taller Git 26.1 - Grupo Atrium</p>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>

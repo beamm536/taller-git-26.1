@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Taller de Git - Grupo Atrium">
+    <title>Taller Git 26.1 - Tagui</title>
+
+    <!-- Normalización -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Taller de Git & GitHub</h1>
+        <p>Grupo Atrium - Control de Versiones</p>
+    </header>
+
+    <nav class="site-nav">
+        <ul class="menu">
+            <li><a href="tagui.html" class="active">Inicio</a></li>
+            <li><a href="introduccion.html">Introducción</a></li>
+            <li><a href="comandos.html">Comandos</a></li>
+            <li><a href="flujo.html">Flujo</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="intro">
+            <h2>Introducción</h2>
+            <p>Git es un sistema de control de versiones distribuido. Permite llevar un registro ordenado de los cambios
+                en archivos.</p>
+        </section>
+
+        <section id="comandos">
+            <h2>Comandos Básicos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Comando</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>git status</code></td>
+                        <td>Visualizar estado de archivos</td>
+                    </tr>
+                    <tr>
+                        <td><code>git add .</code></td>
+                        <td>Agregar archivos al staging</td>
+                    </tr>
+                    <tr>
+                        <td><code>git commit -m "msg"</code></td>
+                        <td>Crear commit con mensaje</td>
+                    </tr>
+                    <tr>
+                        <td><code>git push</code></td>
+                        <td>Enviar cambios al remoto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="flujo">
+            <h2>Flujo de Trabajo</h2>
+            <ol>
+                <li>Visualizar estado: <code>git status</code></li>
+                <li>Preparar cambios: <code>git add .</code></li>
+                <li>Crear commit: <code>git commit -m "mensaje"</code></li>
+                <li>Enviar al remoto: <code>git push</code></li>
+            </ol>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p><strong>Estudiante del Grupo Atrium</strong></p>
+            <p>Desarrollador en formación, aprendiendo control de versiones y colaboración en equipo.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 - Taller Git 26.1</p>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>

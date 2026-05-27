@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Comandos esenciales de Git">
+    <title>Comandos - Taller Git 26.1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>🛠️ Comandos de Git</h1>
+    </header>
+
+    <nav class="site-nav">
+        <ul class="menu">
+            <li><a href="tagui.html">Inicio</a></li>
+            <li><a href="introduccion.html">Introducción</a></li>
+            <li><a href="comandos.html" class="active">Comandos</a></li>
+            <li><a href="flujo.html">Flujo</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Comandos Esenciales</h2>
+            <p>Aquí encontrarás los comandos más utilizados en el día a día con Git:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Comando</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>git init</code></td>
+                        <td>Inicializa un repositorio local</td>
+                        <td><code>git init mi-proyecto</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git clone</code></td>
+                        <td>Descarga un repositorio remoto</td>
+                        <td><code>git clone https://github.com/usuario/repo.git</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git status</code></td>
+                        <td>Muestra el estado de los archivos</td>
+                        <td><code>git status</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git add</code></td>
+                        <td>Agrega archivos al área de preparación</td>
+                        <td><code>git add .</code> o <code>git add archivo.txt</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git commit</code></td>
+                        <td>Guarda los cambios con un mensaje</td>
+                        <td><code>git commit -m "Mensaje descriptivo"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git push</code></td>
+                        <td>Envía cambios al repositorio remoto</td>
+                        <td><code>git push origin main</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git pull</code></td>
+                        <td>Descarga y fusiona cambios del remoto</td>
+                        <td><code>git pull origin main</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git branch</code></td>
+                        <td>Lista o crea ramas</td>
+                        <td><code>git branch nueva-rama</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>git merge</code></td>
+                        <td>Fusiona una rama en la actual</td>
+                        <td><code>git merge nueva-rama</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Volver</h3>
+            <a href="tagui.html" class="button">← Volver al Inicio</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 - Taller Git 26.1 - Grupo Atrium</p>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>

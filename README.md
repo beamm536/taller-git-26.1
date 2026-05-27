@@ -1,7 +1,7 @@
 # taller-git-26.1
 
+## Control de versiones
 
-**control de versiones**
-- area de trabajo `git status` - visualizar
-- fase de preparacion - `git add . // o bien nombre archivo`
-- creacion commit - `git commit -m "mensaje"`
+- área de trabajo: `git status` - visualizar
+- fase de preparación: `git add .` o bien `git add <archivo>`
+- creación commit: `git commit -m "mensaje"`

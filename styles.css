@@ -1,0 +1,246 @@
+/* Variables */
+:root {
+    --clr-primary: #2c3e50;
+    --clr-accent: #3498db;
+    --clr-bg: #fafafa;
+    --clr-text: #333333;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header */
+.site-header {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--clr-primary);
+    color: #fff;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Nav */
+.site-nav {
+    background: var(--clr-primary);
+}
+
+.site-nav ul.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.site-nav ul.menu li {
+    margin: 0 0.8rem;
+}
+
+.site-nav ul.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.3rem 0;
+}
+
+.site-nav ul.menu a:hover {
+    color: var(--clr-accent);
+}
+
+/* Secciones */
+section {
+    margin-bottom: 2.5rem;
+    padding-top: 1rem;
+}
+
+section h2 {
+    color: var(--clr-primary);
+    font-size: 1.8rem;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    border: 1px solid #e0e0e0;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+table th {
+    background: var(--clr-primary);
+    color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Código */
+code {
+    background: #f5f5f5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+}
+
+/* Footer */
+.site-footer {
+    background: var(--clr-primary);
+    color: #fff;
+    text-align: center;
+    padding: 0.9rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .site-nav ul.menu {
+        flex-direction: column;
+    }
+
+    .site-header h1 {
+        font-size: 1.9rem;
+    }
+}
+
+/* ===== NUEVOS ESTILOS PARA PÁGINAS SEPARADAS ===== */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-accent) 100%);
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    color: var(--clr-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--clr-muted);
+    margin-bottom: 1rem;
+}
+
+/* Button Variants */
+.button-large {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Workflow Steps */
+.workflow-steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+}
+
+.workflow-steps li {
+    counter-increment: step;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.workflow-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--clr-accent);
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h3 {
+    color: var(--clr-primary);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-card h4 {
+    color: var(--clr-accent);
+    margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
